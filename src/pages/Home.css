@@ -1,0 +1,125 @@
+.featured-movie {
+    width: 100%;
+    padding-top: 70px;
+    background: #111;
+}
+
+.featured-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.featured-content h2 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.featured-video {
+    width: 100%;
+    height: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.movie-info {
+    margin-top: 20px;
+    color: white;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #e5e5e5;
+    margin-bottom: 15px;
+}
+
+.tags {
+    display: flex;
+    gap: 10px;
+}
+
+.tag {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #e5e5e5;
+}
+
+/* Style de la grille de films */
+.movies-container {
+    background: #111;
+    padding: 20px;
+}
+
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.movie-card {
+    background: #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.movie-poster {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.movie-details {
+    padding: 15px;
+    color: white;
+}
+
+.movie-details h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.movie-details p {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.movie-rating {
+    color: #ffd700;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .featured-content {
+        padding: 10px;
+    }
+    
+    .featured-video {
+        height: 300px;
+    }
+
+    .featured-content h2 {
+        font-size: 20px;
+    }
+
+    .movies-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
