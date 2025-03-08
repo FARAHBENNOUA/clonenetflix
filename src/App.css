@@ -3,7 +3,6 @@
     min-height: 100vh;
 }
 
-/* Style de la navigation */
 .nav-links {
     position: fixed;
     top: 70px;  /* Espace pour la Navbar */
