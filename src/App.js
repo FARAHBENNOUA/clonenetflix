@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
 import Navbar from './components/NavBar/NavBar';
 import Home from './pages/Home';
+import Movies from './pages/Movies'; // Créez ce composant
+import Rated from './pages/Rated';   // Créez ce composant
 import './App.css';
 
 const App = () => {
@@ -29,12 +31,12 @@ const App = () => {
 
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/movies" element={<Home />} />
-          <Route path="/rated" element={<Home />} />
+          <Route path="/movies" element={<Movies />} />
+          <Route path="/rated" element={<Rated />} />
         </Routes>
       </div>
     </Router>
   );
 };
 
-export default App;
+export default App

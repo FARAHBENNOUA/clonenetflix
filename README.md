@@ -1,2 +1,3 @@
 # clonenetflix
-je débute et j ai creez un site comme netflix
+JE vospresent emon pressier essai pour cloner netflix!!
+je le modifiere aux differentes etape de mon apprentissage

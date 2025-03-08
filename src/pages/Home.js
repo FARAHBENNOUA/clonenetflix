@@ -16,20 +16,18 @@ const Home = () => {
                     <h2>57 Secondes - Bande annonce VF (2024)</h2>
                     <iframe 
                         className="featured-video"
-                        src="https://www.youtube.com/embed/jmkwNvZHQI0"
+                        src="https://www.youtube.com/embed/jmkwNvZHQI0?rel=0&controls=1&modestbranding=1"
                         title="57 Secondes"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
+                        frameBorder="0"
                     ></iframe>
                     <div className="movie-info">
                         <p className="description">
                             Un spécialiste en technologie découvre un mystérieux appareil qui lui permet de voyager 57 secondes dans le passé.
                         </p>
-                        
-                           
-                        </div>
                     </div>
-                
+                </div>
             </section>
 
             {/* Section Liste des Films */}

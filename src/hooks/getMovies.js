@@ -2,14 +2,14 @@ import { useState, useEffect } from "react";
 import { api } from '../api/config';
 
 export function useGetMovies() {
-    const [movies, setMovies] = useState([]); // Assurez-vous que c'est initialisé comme tableau vide
+    const [movies, setMovies] = useState([]); 
     const [error, setError] = useState(null);
    
     const fetchMovies = async () => {
         try {
             const response = await api.get('/movies/paginated');
-            // Vérifiez si response.data est un tableau ou s'il contient la propriété qui contient le tableau
-            setMovies(response.data.data || response.data || []); // Adapté selon la structure de votre API
+          
+            setMovies(response.data.data || response.data || []);
             console.log("data movies :", response.data)
         } catch (error) {
             console.error("Erreur détaillée:", error);

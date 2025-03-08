@@ -1,0 +1,123 @@
+.movies-page {
+    width: 100%;
+    background: #111;
+    padding-top: 120px;
+    min-height: 100vh;
+}
+
+.movies-page h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.movie-card {
+    background: #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.movie-card:hover {
+    transform: scale(1.15);
+    z-index: 10;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.movie-card:hover .movie-details {
+    max-height: 300px;
+    padding-bottom: 30px;
+}
+
+.movie-card:hover .play-button {
+    opacity: 1;
+}
+
+.movie-poster {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.movie-card:hover .movie-poster {
+    transform: scale(1.1);
+}
+
+.play-button {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background-color: #e50914;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.movie-details {
+    padding: 15px;
+    color: white;
+    background: linear-gradient(to top, #1a1a1a 90%, transparent 100%);
+    max-height: 100px;
+    transition: all 0.4s ease;
+    overflow: hidden;
+}
+
+.movie-details h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.movie-details p {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.movie-card:hover .movie-details p {
+    display: block;
+    -webkit-line-clamp: initial;
+    max-height: 200px;
+}
+
+.movie-rating {
+    color: #ffd700;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .movies-page {
+        padding-top: 100px;
+    }
+    
+    .movies-page h1 {
+        font-size: 24px;
+    }
+    
+    .movies-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
